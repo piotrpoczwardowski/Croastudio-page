@@ -1,0 +1,20 @@
+.mainBlock {
+  background: white;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+
+.mainBlock h2 {
+  font-size: 15px;
+  padding-top: 80px;
+  font-weight: bold;
+  color: red;
+}
+
+.mainBlock h3 {
+  font-weight: normal;
+  width: 410px;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.89);
+}
