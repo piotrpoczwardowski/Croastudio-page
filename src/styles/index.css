@@ -1,6 +1,8 @@
+@import url("https://use.typekit.net/zns8vau.css");
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +27,18 @@ p {
   font-weight: 200;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .welcome__text {
   width: 500px;
   margin-left: 100px;
@@ -32,7 +46,6 @@ p {
 }
 
 .welcome__text .type {
-  height: 300px;
   font-weight: bold;
   font-size: 80px;
 }
@@ -55,14 +68,20 @@ p {
   transition: all 1s;
 }
 
+.welcome__button button a {
+  text-decoration: none;
+  color: white;
+}
+
 .welcome__button button:hover {
   background-size: 100% 100%;
   transform: scale(1.02);
 }
 
 .welcome__arrow {
-  background: black;
-  color: white;
+  background: linear-gradient(to bottom, #d400ff, #ad04a5, #4d023c, #000000);
+  background-position-y: -900px;
+  background-size: 100% 500%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -70,6 +89,22 @@ p {
   justify-content: center;
   margin: 0 auto;
   margin-top: 150px;
+  transition: all 1s;
+}
+
+.welcome__arrow a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 20px;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.welcome__arrow:hover {
+  background-position-y: 0px;
+  background-size: 100% 50%;
 }
 
 .whyUs {
@@ -127,8 +162,8 @@ p {
 .graphic__circle {
   float: right;
   background: white;
-  width: 650px;
-  height: 650px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -140,8 +175,51 @@ p {
   width: 320px;
 }
 
-.offer__section {
+.gallery {
   margin-top: 100px;
+}
+
+.gallery img {
+  height: 250px;
+}
+
+.gallery__title {
+  margin-left: 100px;
+}
+
+.gallery__blocks {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.gallery__blocks a {
+  text-decoration: none;
+  color: black;
+}
+
+.gallery__block {
+  transition: all 0.9s;
+  box-shadow: 0px 0px 0px #8db7df;
+}
+
+.gallery__block h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.gallery__block:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 70px 70px 0px #8db7df;
+}
+
+.offer__title {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.offer__section {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -149,7 +227,7 @@ p {
 .offer__block {
   margin-left: 50px;
   border: 1.2px solid black;
-  width: 250px;
+  width: 330px;
   height: 500px;
   position: relative;
   box-sizing: border-box;
@@ -181,9 +259,36 @@ p {
 }
 
 .foreground__text p {
-  margin-top: 28px;
+  margin-top: 35px;
   font-size: 20px;
   color: black;
+}
+
+.foreground__text p:first-child {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.text__list {
+  line-height: 50px;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+.contact__section {
+  margin-top: 50px;
+  margin-left: 100px;
+  height: 750px;
+  background-image: url(../images/us.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.contact__section p {
+  margin-top: 50px;
 }
 
 @media (max-width: 1136px) {
@@ -229,6 +334,27 @@ p {
   }
 }
 
+@media (max-width: 1100px) {
+  .gallery {
+    margin-top: 50px;
+  }
+  .gallery__title {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .gallery__blocks {
+    display: block;
+    margin: 0px;
+  }
+  .gallery__block {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .gallery__block h3 {
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 860px) {
   .welcome__text {
     margin-left: 0px;
@@ -244,7 +370,9 @@ p {
     text-align: center;
   }
   .whyUs__text {
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
   }
   .whyUs__image {
     display: block;
@@ -263,8 +391,9 @@ p {
   .description__text {
     text-align: center;
     padding: 0px;
-    width: 100%;
+    width: 60%;
     padding-right: 0px;
+    margin: 0 auto;
   }
   .description__image {
     text-align: center;
@@ -275,6 +404,9 @@ p {
   .description__image img {
     margin-left: 0px;
   }
+  .graphic {
+    height: auto;
+  }
   .graphic h2 {
     margin-left: 0px;
     text-align: center;
@@ -284,9 +416,17 @@ p {
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
+    border-radius: 0;
+    width: 100%;
+    box-shadow: none;
+    height: auto;
   }
   .circle__text {
-    width: 320px;
+    width: 60%;
+  }
+  .offer__title {
+    margin-left: 0px;
+    text-align: center;
   }
   .offer__section {
     margin-top: 0px;
@@ -294,9 +434,48 @@ p {
   }
   .offer__block {
     margin-left: 0px;
-    width: 60%;
-    height: 400px;
+    width: 70%;
+    height: auto;
+    padding-bottom: 50px;
     margin: 0 auto;
     margin-top: 80px;
+  }
+  .contact__section {
+    background-position-x: none;
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 784px) {
+  .contact__section {
+    background: white;
+    text-align: center;
+    margin-left: 0px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery__block {
+    pointer-events: none;
+  }
+  .gallery__block img {
+    height: 30vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .whyUs .whyUs__text {
+    width: 90%;
+  }
+  .description .description__text {
+    width: 90%;
+  }
+  .graphic__circle .circle__text {
+    width: 90%;
+  }
+  .offer__block {
+    width: 90%;
   }
 }

@@ -1,13 +1,23 @@
 import React from 'react'
 import Logo from '../images/logo.png'
 import '../styles/Navigation.scss'
-import { Link } from "gatsby"
+import { a } from "gatsby"
+import { FaBars } from 'react-icons/fa';
 
 
 class Navigation extends React.Component {
 
   componentDidMount(){
     let navigation = document.querySelector('.navigation')
+    let links = document.querySelectorAll('.navigation__links a')
+    let nav = document.querySelector('.navigation__links')
+
+    links.forEach(function(link){
+      link.addEventListener('click', function(){
+        nav.classList.remove('show')
+      })
+    })
+
     window.addEventListener('scroll', function(){
       
       if(this.window.scrollY > 100){
@@ -16,28 +26,33 @@ class Navigation extends React.Component {
         navigation.style.background = 'none'
       }
     })
+
+    
+  }
+
+  showMenu = () => {
+    let nav = document.querySelector('.navigation__links')
+    nav.classList.toggle('show')
   }
     render() {
 
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      
+     
       return (
           <div className="navigation">
           <img className="navigation__logo" src={Logo} alt=""/>
           <div className="navigation__links">
-          <Link to='' className="portfolio">Portfolio</Link>
-          <Link to='' className="offer">Oferta</Link>
-          <Link to='' className="about">O nas</Link>
-          <Link to='' className="price">Cennik</Link>
-          <Link to='' className="contact">Kontakt</Link>
-          </div>
+          <a href='#whyUs' className="portfolio">Dlaczego my</a>
+          <a href='#graphic' className="price">Grafika</a>
+          <a href='#gallery' className="portfolio">Galeria</a>
+          <a href='#offer' className="offer">Oferta</a>
          
+          
+          <a href='#contact' className="contact">Kontakt</a>
+          </div>
+         <div onClick={this.showMenu} className="hamburgerMenu">
+         <FaBars />
+         </div>
           </div>
       )
     }

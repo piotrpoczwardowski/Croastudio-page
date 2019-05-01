@@ -8,6 +8,9 @@ import Man from "../images/man.png"
 import circle from "../images/circle.png"
 import star from "../images/star.png"
 import octagon from "../images/octagon.png"
+import profi from "../images/galleryProfi.png"
+import start from "../images/galleryStart.png"
+import { FaChevronCircleDown } from "react-icons/fa"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -18,7 +21,7 @@ const IndexPage = () => (
     <div className="welcome">
       <div className="welcome__text">
         <div className="type">
-          Zrobimy to <br/> za Ciebie
+          Zrobimy to <br /> za Ciebie
           {/* <Typing speed={50} loop>
        Potrzebujesz <br/> stronę <br/> www? 
         <Typing.Backspace count={29} delay={1000}/>
@@ -30,12 +33,18 @@ const IndexPage = () => (
         </div>
 
         <div className="welcome__button">
-          <button>Poznaj ofertę!</button>
+          <button>
+            <a href="#offer"> Poznaj ofertę!</a>
+          </button>
         </div>
       </div>
-      <div className="welcome__arrow" />
+      <div className="welcome__arrow">
+        <a href="#whyUs">
+          <FaChevronCircleDown />
+        </a>
+      </div>
     </div>
-    <div className="whyUs">
+    <div id="whyUs" className="whyUs">
       <div className="whyUs__text">
         <h2>Witaj na naszej stronie!</h2>
         <p>
@@ -53,6 +62,7 @@ const IndexPage = () => (
       </div>
       <div className="description__text">
         <h2>Strona WWW</h2>
+
         <p>
           Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony,
           łatwe w nawigacji, przyjazne dla potencjalnego klienta.
@@ -64,7 +74,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    <div className="graphic">
+    <div id="graphic" className="graphic">
       <h2>Grafika</h2>
       <div className="graphic__circle">
         <div className="circle__text">
@@ -81,7 +91,29 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <div id="gallery" className="gallery">
+      <div className="gallery__title">
+        <h2>Galeria</h2>
+      </div>
+      <div className="gallery__blocks">
+        <div className="gallery__block">
+          <a target="_blank" href="https://www.firmaprofi.com.pl/">
+            <img src={profi} alt="" />
+            <h3>Projekt strony www firma profi</h3>
+          </a>
+        </div>
 
+        <div className="gallery__block">
+          <a href="">
+            <img src={start} alt="" />
+            <h3>Landing page</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="offer" className="offer__title">
+      <h2>Oferta</h2>
+    </div>
     <div className="offer__section">
       <div className="offer__block">
         <div className="block__background" />
@@ -92,56 +124,78 @@ const IndexPage = () => (
           <div className="foreground__text">
             <p> PROSTA STRONA WWW - LANDING PAGE </p>
 
-            <p>
-              {" "}
-              GRATIS <br />
-              -formularz kontaktowe <br />
-              -interaktywna mapa <br />
-              -proste logo <br />
-            </p>
-            <p>400-600,-</p>
+            <div className="text__list">
+              Formularze kontaktowe <br />
+              Interaktywna mapa <br />
+              Proste logo <br />
+            </div>
           </div>
         </div>
       </div>
       <div className="offer__block">
-        <div className="block__background" />
+        <div
+          className="block__background"
+          style={{ background: "rgb(176, 212, 195)" }}
+        />
         <div className="block__foreground">
           <div className="foreground__image">
             <img src={octagon} alt="" />
           </div>
           <div className="foreground__text">
-            <p> PROSTA STRONA WWW - LANDING PAGE </p>
-
             <p>
               {" "}
-              GRATIS <br />
-              -formularz kontaktowe <br />
-              -interaktywna mapa <br />
-              -proste logo <br />
+              PROJEKT <br /> GRAFICZNY{" "}
             </p>
-            <p>400-600,-</p>
+
+            <div className="text__list">
+              Przygotowanie plików do druku <br />
+              Banery reklamowe <br />
+              Branding marki <br />
+            </div>
           </div>
         </div>
       </div>
       <div className="offer__block">
-        <div className="block__background" />
+        <div
+          className="block__background"
+          style={{ background: "rgb(145, 181, 228)" }}
+        />
         <div className="block__foreground">
           <div className="foreground__image">
             <img src={star} alt="" />
           </div>
           <div className="foreground__text">
-            <p> PROSTA STRONA WWW - LANDING PAGE </p>
-
             <p>
               {" "}
-              GRATIS <br />
-              -formularz kontaktowe <br />
-              -interaktywna mapa <br />
-              -proste logo <br />
+              STRONA <br /> PREMIUM{" "}
             </p>
-            <p>400-600,-</p>
+
+            <div className="text__list">
+              Do 6 podstron <br />
+              Pomoc z domeną/hostingiem <br />
+              Social media
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="contact" className="contact__section">
+      <h2>Kontakt</h2>
+      <div>
+        <p>
+          Jesteśmy z Trójmiasta. <br /> Chcesz umówić się na spotkanie? <br />{" "}
+          Albo po prostu porozmawiać? <br /> Zadzwoń!
+        </p>
+
+        <p>
+          Numer <br />
+          534-429-916
+        </p>
+        <p>
+          Email <br />
+          pp@gmail.com
+        </p>
       </div>
     </div>
   </Layout>

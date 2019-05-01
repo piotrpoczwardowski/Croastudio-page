@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from './Navigation'
 import VideoBackground from './VideoBackground'
 
+
 class Layout extends React.Component {
     render() {
 
@@ -9,6 +10,7 @@ class Layout extends React.Component {
 
       return (
           <div>
+              
               
               <Navigation/>
              
