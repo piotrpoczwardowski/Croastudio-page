@@ -15,6 +15,7 @@ import leaf2 from '../images/leaf2.png'
 import leaf3 from '../images/leaf3.png'
 import { FaChevronCircleDown } from "react-icons/fa"
 import { Helmet } from "react-helmet"
+import SideMenu from "../components/SideMenu";
 
 
 // import Layout from "../components/layout"
@@ -23,6 +24,7 @@ import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
   <Layout>
+   
    <Helmet
   title="Strony WWW-Projektowanie stron www"
   meta={[
@@ -31,6 +33,7 @@ const IndexPage = () => (
   ]}
   
 />
+
     <div className="welcome">
       <div className="welcome__text">
         <div className="type">
@@ -117,7 +120,7 @@ const IndexPage = () => (
         </div>
 
         <div className="gallery__block">
-          <a href="">
+          <a target="_blank" href="https://stoic-tesla-57b834.netlify.com/">
             <img src={start} alt="" />
             <h3>Landing page</h3>
           </a>
@@ -209,6 +212,7 @@ const IndexPage = () => (
        <strong> Email <br /> </strong>
           croadesigners@gmail.com
         </p>
+        <SideMenu/>
        
       </div>
       <div className="leafs">
