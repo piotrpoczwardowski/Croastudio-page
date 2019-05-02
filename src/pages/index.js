@@ -24,14 +24,12 @@ import { Helmet } from "react-helmet"
 const IndexPage = () => (
   <Layout>
    <Helmet
-  title="..."
+  title="Strony WWW-Projektowanie stron www"
   meta={[
       { name: 'description', content: '...' },
       { name: 'keywords', content: '....' },
   ]}
-  link={[
-      { rel: 'shortcut icon', type: 'image/png', href: `${Man}` }
-  ]}
+  
 />
     <div className="welcome">
       <div className="welcome__text">
@@ -204,20 +202,22 @@ const IndexPage = () => (
         </p>
 
         <p>
-          Numer <br />
+        <strong>  Numer <br /> </strong>
           534-429-916
         </p>
         <p>
-          Email <br />
+       <strong> Email <br /> </strong>
           croadesigners@gmail.com
         </p>
+       
       </div>
       <div className="leafs">
-      <img src={leaf1} alt="" className="leaf1"/>
+    <img src={leaf1} alt="" className="leaf1"/>
       <img src={leaf2} alt="" className="leaf2"/>
       <img src={leaf3} alt="" className="leaf3"/>
       </div>
     </div>
+  
   </Layout>
 )
 

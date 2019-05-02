@@ -279,21 +279,43 @@ p {
 
 .contact__section {
   margin-top: 50px;
-  margin-left: 100px;
-  height: 750px;
+  padding-left: 100px;
+  height: 800px;
   background-image: url(../images/us.png);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position-x: right;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact__section p {
   margin-top: 50px;
 }
 
+.leafs {
+  position: absolute;
+}
+
 .leafs img {
   height: 500px;
   position: absolute;
+}
+
+.leaf1 {
+  left: -250px;
+  z-index: 1;
+  bottom: -550px;
+}
+
+.leaf2 {
+  left: 0px;
+  bottom: -570px;
+}
+
+.leaf3 {
+  left: 450px;
+  bottom: -620px;
 }
 
 @media (max-width: 1136px) {
