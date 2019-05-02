@@ -12,13 +12,15 @@ class SideMenu extends React.Component {
 
 
       return (
+          
           <div className='sideMenu'>
-              
+              <p><strong>Znajdziesz też nas na</strong></p>
+             <div className="sideMenu__links">
               <a target="_blank" href="https://www.facebook.com/croastudioprojektowaniawww/"><img src={facebook} alt=""/></a>
               <a target="_blank" href="https://www.instagram.com/croastudio/"><img src={instagram} alt=""/></a>
               <a target="_blank" href=""><img src={behance} alt=""/></a>
               <a target="_blank" href="https://github.com/piotrpoczwardowski"><img src={github} alt=""/></a>
-             
+              </div>
           </div>
       )
     }

@@ -1,4 +1,8 @@
-.sideMenu {
+.sideMenu p {
+  display: none;
+}
+
+.sideMenu__links {
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -8,11 +12,25 @@
   justify-content: space-around;
 }
 
-.sideMenu img {
+.sideMenu__links img {
   height: 60px;
   transition: all 0.2s;
 }
 
-.sideMenu img:hover {
+.sideMenu__links img:hover {
   transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .sideMenu p {
+    display: block;
+  }
+  .sideMenu__links {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 60vw;
+  }
 }
