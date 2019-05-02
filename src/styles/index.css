@@ -291,6 +291,11 @@ p {
   margin-top: 50px;
 }
 
+.leafs img {
+  height: 500px;
+  position: absolute;
+}
+
 @media (max-width: 1136px) {
   .whyUs {
     margin-top: -120px;

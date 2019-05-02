@@ -10,7 +10,12 @@ import star from "../images/star.png"
 import octagon from "../images/octagon.png"
 import profi from "../images/galleryProfi.png"
 import start from "../images/galleryStart.png"
+import leaf1 from '../images/leaf1.png'
+import leaf2 from '../images/leaf2.png'
+import leaf3 from '../images/leaf3.png'
 import { FaChevronCircleDown } from "react-icons/fa"
+import { Helmet } from "react-helmet"
+
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -18,6 +23,16 @@ import { FaChevronCircleDown } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout>
+   <Helmet
+  title="..."
+  meta={[
+      { name: 'description', content: '...' },
+      { name: 'keywords', content: '....' },
+  ]}
+  link={[
+      { rel: 'shortcut icon', type: 'image/png', href: `${Man}` }
+  ]}
+/>
     <div className="welcome">
       <div className="welcome__text">
         <div className="type">
@@ -194,8 +209,13 @@ const IndexPage = () => (
         </p>
         <p>
           Email <br />
-          pp@gmail.com
+          croadesigners@gmail.com
         </p>
+      </div>
+      <div className="leafs">
+      <img src={leaf1} alt="" className="leaf1"/>
+      <img src={leaf2} alt="" className="leaf2"/>
+      <img src={leaf3} alt="" className="leaf3"/>
       </div>
     </div>
   </Layout>
