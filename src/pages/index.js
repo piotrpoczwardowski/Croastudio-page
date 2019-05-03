@@ -130,71 +130,7 @@ const IndexPage = () => (
     <div id="offer" className="offer__title">
       <h2>Oferta</h2>
     </div>
-    <div className="offer__section">
-      <div className="offer__block">
-        <div className="block__background" />
-        <div className="block__foreground">
-          <div className="foreground__image">
-            <img src={circle} alt="" />
-          </div>
-          <div className="foreground__text">
-            <p> PROSTA STRONA WWW - LANDING PAGE </p>
-
-            <div className="text__list">
-              Formularze kontaktowe <br />
-              Interaktywna mapa <br />
-              Proste logo <br />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="offer__block">
-        <div
-          className="block__background"
-          style={{ background: "rgb(176, 212, 195)" }}
-        />
-        <div className="block__foreground">
-          <div className="foreground__image">
-            <img src={octagon} alt="" />
-          </div>
-          <div className="foreground__text">
-            <p>
-              {" "}
-              PROJEKT <br /> GRAFICZNY{" "}
-            </p>
-
-            <div className="text__list">
-              Przygotowanie plików do druku <br />
-              Banery reklamowe <br />
-              Branding marki <br />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="offer__block">
-        <div
-          className="block__background"
-          style={{ background: "rgb(145, 181, 228)" }}
-        />
-        <div className="block__foreground">
-          <div className="foreground__image">
-            <img src={star} alt="" />
-          </div>
-          <div className="foreground__text">
-            <p>
-              {" "}
-              STRONA <br /> PREMIUM{" "}
-            </p>
-
-            <div className="text__list">
-              Do 6 podstron <br />
-              Pomoc z domeną/hostingiem <br />
-              Social media
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div id="contact" className="contact__section">
       <h2>Kontakt</h2>
