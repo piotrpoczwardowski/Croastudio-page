@@ -8,3 +8,9 @@
   z-index: -1;
   top: 0;
 }
+
+@media (max-width: 1300px) {
+  .contener__video {
+    display: none;
+  }
+}

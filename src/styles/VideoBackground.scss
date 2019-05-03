@@ -16,3 +16,9 @@
 video{
  
 }
+
+@media (max-width: 1300px) {
+.contener__video{
+    display: none;
+}
+}
