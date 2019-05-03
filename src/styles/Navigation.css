@@ -87,10 +87,9 @@
     border-bottom: 1px solid black;
   }
   .hamburgerMenu {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin-right: 50px;
+    display: block;
+    margin-left: 50vw;
     cursor: pointer;
+    margin-top: 10px;
   }
 }

@@ -37,7 +37,7 @@ const IndexPage = () => (
     <div className="welcome">
       <div className="welcome__text">
         <div className="type">
-          Zrobimy to <br /> za Ciebie
+          Strona www dla Ciebie
           {/* <Typing speed={50} loop>
        Potrzebujesz <br/> stronę <br/> www? 
         <Typing.Backspace count={29} delay={1000}/>
