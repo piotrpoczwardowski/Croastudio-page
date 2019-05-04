@@ -220,6 +220,7 @@ p {
 
 .offer__section {
   display: flex;
+  justify-content: space-around;
 }
 
 .offer__block {
@@ -251,6 +252,10 @@ p {
   color: white;
 }
 
+.block__title--thin {
+  font-weight: 200;
+}
+
 .block__title--flex {
   display: flex;
 }
@@ -258,6 +263,7 @@ p {
 .block__title--flex .title1 {
   padding-left: 30px;
   margin-top: -10px;
+  font-weight: 200;
 }
 
 .block__title--flex .title2 {
@@ -266,22 +272,38 @@ p {
 
 .block__price {
   font-size: 30px;
-  margin-top: 80px;
+  margin-top: 50px;
   font-weight: bold;
 }
 
 .benefits {
   margin: 0 auto;
+  margin-top: 20px;
   width: 80%;
 }
 
 .benefit {
   display: flex;
-  height: 55px;
+}
+
+.benefit .benefit__img {
+  width: 90px;
 }
 
 .benefit .benefit__img img {
   transform: scale(0.7);
+}
+
+.benefit .benefit__text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.benefit__text--add {
+  justify-content: center;
+  margin: 20px 0 20px -25px;
 }
 
 .contact__section {
@@ -359,6 +381,10 @@ p {
   }
   .graphic {
     background-position-x: 8vw;
+  }
+  .offer__section {
+    justify-content: none;
+    flex-wrap: wrap;
   }
 }
 
@@ -501,5 +527,14 @@ p {
   }
   .graphic__circle .circle__text {
     width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .offer__title {
+    display: none;
+  }
+  .offer__section {
+    display: none;
   }
 }

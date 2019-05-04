@@ -78,12 +78,12 @@ const IndexPage = () => (
         <h2>Strona WWW</h2>
 
         <p>
-          Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony,
+          Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony, 
           łatwe w nawigacji, przyjazne dla potencjalnego klienta.
         </p>
         <h3>W cenie każdego projektu:</h3>
         <p>
-          technologia(RWD) responsywność dzięki,której twoja strona wyświetla
+          technologia(RWD) responsywność dzięki, której twoja strona wyświetla
           się na każdym ekranie komputera i urządzenia mobilnego.
         </p>
       </div>
@@ -94,7 +94,7 @@ const IndexPage = () => (
         <div className="circle__text">
           <p>
             Dobry design to podstawa. Szukasz nietypowego projektu? Zaprojektuje
-            dla Ciebie Twoje wymarzone logo,baner czy wizytówkę.
+            dla Ciebie Twoje wymarzone logo, baner czy wizytówkę.
           </p>
           <p>
             W grafice wykorzystujemy nie tylko grę słów i kolorów, ale też
@@ -132,7 +132,7 @@ const IndexPage = () => (
       <div className="offer__block">
         <div className="block__title">
           PROSTA STRONA <br />
-          (typu landing page)
+         <div className="block__title--thin">(typu landing page)</div> 
         </div>
         <div style={{ color: "#6F3996" }} className="block__price">
           od 399,-
@@ -154,12 +154,15 @@ const IndexPage = () => (
         <div style={{ color: "#8ED2C8" }} className="block__price">
           od 50,-
         </div>
-        {offerBlock2.map(benef => (
+        <div className="benefits">
+          {offerBlock2.map(benef => (
             <div className="benefit">
             <div className="benefit__img">  <img src={benef.img} alt="" /></div>
               <div className="benefit__text">{benef.text}</div>
             </div>
           ))}
+          
+        </div>
       </div>
       <div className="offer__block">
         <div className="block__title block__title--flex">
@@ -171,12 +174,15 @@ const IndexPage = () => (
         <div style={{ color: "#5055A5" }} className="block__price">
           od 999 .-
         </div>
-        {offerBlock3.map(benef => (
+        <div className="benefits">
+          {offerBlock3.map(benef => (
             <div className="benefit">
             <div className="benefit__img">  <img src={benef.img} alt="" /></div>
-              <div className="benefit__text">{benef.text}</div>
+              <div className={benef.img === '' ? 'benefit__text--add' : 'benefit__text'}>{benef.text}</div>
             </div>
           ))}
+          
+        </div>
       </div>
     </div>
 
