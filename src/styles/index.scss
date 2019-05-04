@@ -48,6 +48,9 @@ p {
     font-size: 80px;
   }
 }
+.contact__button{
+  display: none;
+}
 .welcome__button {
   margin-top: 40px;
   text-align: center;
@@ -551,6 +554,12 @@ position: absolute;
     display: none;
   }
 .offer__section{
+  display: none;
+}
+.contact__button{
+  display: block;
+}
+.offer__button{
   display: none;
 }
 }

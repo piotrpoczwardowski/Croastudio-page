@@ -27,7 +27,7 @@ const IndexPage = () => (
     <Helmet
       title="Strony WWW-Projektowanie stron www"
       meta={[
-        { name: "description", content: "..." },
+        { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika" },
         { name: "keywords", content: "...." },
       ]}
     />
@@ -48,7 +48,7 @@ const IndexPage = () => (
 
         <div className="welcome__button">
           <button>
-            <a href="#offer"> Poznaj ofertę!</a>
+            <a className='offer__button' href="#offer"> Poznaj ofertę!</a> <a className='contact__button' href="#contact"> Skontaktuj się z nami!</a>
           </button>
         </div>
       </div>
