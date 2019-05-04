@@ -17,6 +17,7 @@ import { FaChevronCircleDown } from "react-icons/fa"
 import { Helmet } from "react-helmet"
 import SideMenu from "../components/SideMenu"
 
+
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
@@ -136,9 +137,12 @@ const IndexPage = () => (
         <div style={{ color: "#6F3996" }} className="block__price">
           od 399,-
         </div>
+        <div className="benefits">
+        
+        </div>
       </div>
       <div className="offer__block">
-        <div className="block__title">GRAFIKA</div>
+        <div style={{marginTop: '10px'}} className="block__title">GRAFIKA</div>
         <div style={{ color: "#8ED2C8" }} className="block__price">
           od 50,-
         </div>
