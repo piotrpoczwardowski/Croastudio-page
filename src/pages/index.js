@@ -10,13 +10,12 @@ import star from "../images/star.png"
 import octagon from "../images/octagon.png"
 import profi from "../images/galleryProfi.png"
 import start from "../images/galleryStart.png"
-import leaf1 from '../images/leaf1.png'
-import leaf2 from '../images/leaf2.png'
-import leaf3 from '../images/leaf3.png'
+import leaf1 from "../images/leaf1.png"
+import leaf2 from "../images/leaf2.png"
+import leaf3 from "../images/leaf3.png"
 import { FaChevronCircleDown } from "react-icons/fa"
 import { Helmet } from "react-helmet"
-import SideMenu from "../components/SideMenu";
-
+import SideMenu from "../components/SideMenu"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -24,15 +23,13 @@ import SideMenu from "../components/SideMenu";
 
 const IndexPage = () => (
   <Layout>
-   
-   <Helmet
-  title="Strony WWW-Projektowanie stron www"
-  meta={[
-      { name: 'description', content: '...' },
-      { name: 'keywords', content: '....' },
-  ]}
-  
-/>
+    <Helmet
+      title="Strony WWW-Projektowanie stron www"
+      meta={[
+        { name: "description", content: "..." },
+        { name: "keywords", content: "...." },
+      ]}
+    />
 
     <div className="welcome">
       <div className="welcome__text">
@@ -130,7 +127,34 @@ const IndexPage = () => (
     <div id="offer" className="offer__title">
       <h2>Oferta</h2>
     </div>
-    
+    <div className="offer__section">
+      <div className="offer__block">
+        <div className="block__title">
+          PROSTA STRONA <br />
+          (typu landing page)
+        </div>
+        <div style={{ color: "#6F3996" }} className="block__price">
+          od 399,-
+        </div>
+      </div>
+      <div className="offer__block">
+        <div className="block__title">GRAFIKA</div>
+        <div style={{ color: "#8ED2C8" }} className="block__price">
+          od 50,-
+        </div>
+      </div>
+      <div className="offer__block">
+        <div className="block__title block__title--flex">
+          <span className="title1">
+            Dobry <br /> wybór
+          </span>
+          <span className="title2">STRONA PREMIUM</span>
+        </div>
+        <div style={{ color: "#5055A5" }} className="block__price">
+          od 999 .-
+        </div>
+      </div>
+    </div>
 
     <div id="contact" className="contact__section">
       <h2>Kontakt</h2>
@@ -141,23 +165,27 @@ const IndexPage = () => (
         </p>
 
         <p>
-        <strong>  Numer <br /> </strong>
+          <strong>
+            {" "}
+            Numer <br />{" "}
+          </strong>
           534-429-916
         </p>
         <p>
-       <strong> Email <br /> </strong>
+          <strong>
+            {" "}
+            Email <br />{" "}
+          </strong>
           croadesigners@gmail.com
         </p>
-        <SideMenu/>
-       
+        <SideMenu />
       </div>
       <div className="leafs">
-    <img src={leaf1} alt="" className="leaf1"/>
-      <img src={leaf2} alt="" className="leaf2"/>
-      <img src={leaf3} alt="" className="leaf3"/>
+        <img src={leaf1} alt="" className="leaf1" />
+        <img src={leaf2} alt="" className="leaf2" />
+        <img src={leaf3} alt="" className="leaf3" />
       </div>
     </div>
-  
   </Layout>
 )
 

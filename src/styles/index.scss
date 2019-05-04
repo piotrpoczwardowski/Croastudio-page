@@ -212,60 +212,55 @@ p {
   margin-left: 100px;
   margin-top: 100px;
 }
-
-.offer__section {
-  margin-top: 50px;
+.offer__section{
   display: flex;
-  justify-content: space-around;
 }
 
-.offer__block {
-  margin-left: 50px;
-  border: 1.2px solid black;
-  width: 330px;
-  height: 500px;
-  position: relative;
-  box-sizing: border-box;
+.offer__block{
+    height: 700px;
+    width: 400px;
+   
+    text-align: center;
+ &:nth-child(1){
+   background: url(../images/offerBlock1.png);
+   background-size: cover;
+ }
+ &:nth-child(2){
+  background: url(../images/offerBlock2.png);
+  background-size: cover;
 }
-.block__background {
-  z-index: -1;
-  background: pink;
-  height: 10px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin-left: -15px;
-  margin-top: -15px;
+&:nth-child(3){
+  background: url(../images/offerBlock3.png);
+  background-size: cover;
 }
-.foreground__image {
-  text-align: center;
-  margin-top: 20px;
-  img {
-    width: 100px;
+}
+
+.block__title{
+  padding-top: 80px;
+  font-size: 20px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  
+}
+.block__title--flex{
+  display: flex;
+  
+  .title1{
+    padding-left: 30px;
+    margin-top: -10px;
+  }
+  .title2{
+    padding-left: 40px;
+    
   }
 }
 
-.foreground__text {
-  text-align: center;
-  padding: 0px 15px;
+.block__price{
+  font-size: 30px;
+  margin-top: 80px;
 
-  p {
-    margin-top: 35px;
-    font-size: 20px;
-    color: black;
-    &:first-child {
-      font-weight: bold;
-      font-size: 25px;
-    }
-  }
-}
-
-.text__list {
-  line-height: 50px;
-  margin-top: 30px;
-  text-align: left;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.781);
+  font-weight: bold;
 }
 
 .contact__section {
@@ -458,25 +453,10 @@ position: absolute;
   .circle__text {
     width: 60%;
   }
-  .offer__title {
-    margin-left: 0px;
-    text-align: center;
-  }
-  .offer__section {
-    margin-top: 0px;
-    display: block;
-  }
 
-  .offer__block {
-    margin-left: 0px;
+ 
 
-    width: 70%;
-    height: auto;
-    padding-bottom: 50px;
-
-    margin: 0 auto;
-    margin-top: 80px;
-  }
+  
   .contact__section {
     background-position-x: none;
     background-size: 100%;
@@ -522,7 +502,5 @@ position: absolute;
       width: 90%;
     }
   }
-  .offer__block {
-    width: 90%;
-  }
+  
 }
