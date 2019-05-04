@@ -16,7 +16,7 @@ import leaf3 from "../images/leaf3.png"
 import { FaChevronCircleDown } from "react-icons/fa"
 import { Helmet } from "react-helmet"
 import SideMenu from "../components/SideMenu"
-
+import { offerBlock1, offerBlock2, offerBlock3 } from "../components/Arrays"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -138,14 +138,28 @@ const IndexPage = () => (
           od 399,-
         </div>
         <div className="benefits">
-        
+          {offerBlock1.map(benef => (
+            <div className="benefit">
+            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+              <div className="benefit__text">{benef.text}</div>
+            </div>
+          ))}
+          
         </div>
       </div>
       <div className="offer__block">
-        <div style={{marginTop: '10px'}} className="block__title">GRAFIKA</div>
+        <div style={{ marginTop: "10px" }} className="block__title">
+          GRAFIKA
+        </div>
         <div style={{ color: "#8ED2C8" }} className="block__price">
           od 50,-
         </div>
+        {offerBlock2.map(benef => (
+            <div className="benefit">
+            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+              <div className="benefit__text">{benef.text}</div>
+            </div>
+          ))}
       </div>
       <div className="offer__block">
         <div className="block__title block__title--flex">
@@ -157,6 +171,12 @@ const IndexPage = () => (
         <div style={{ color: "#5055A5" }} className="block__price">
           od 999 .-
         </div>
+        {offerBlock3.map(benef => (
+            <div className="benefit">
+            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+              <div className="benefit__text">{benef.text}</div>
+            </div>
+          ))}
       </div>
     </div>
 

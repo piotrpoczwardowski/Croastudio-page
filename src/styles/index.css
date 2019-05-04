@@ -270,6 +270,20 @@ p {
   font-weight: bold;
 }
 
+.benefits {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.benefit {
+  display: flex;
+  height: 55px;
+}
+
+.benefit .benefit__img img {
+  transform: scale(0.7);
+}
+
 .contact__section {
   margin-top: 50px;
   padding-left: 100px;
