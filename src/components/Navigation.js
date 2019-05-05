@@ -21,7 +21,7 @@ class Navigation extends React.Component {
     window.addEventListener('scroll', function(){
       
       if(this.window.scrollY > 100){
-        navigation.style.background = 'rgba(255, 255, 255, 0.692)'
+        navigation.style.background = 'white'
         
       } else{
         navigation.style.background = 'none'

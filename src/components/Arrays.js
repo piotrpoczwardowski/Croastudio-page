@@ -18,7 +18,7 @@ import consulting from "../images/offerBlock2/consulting.png"
 
 import full from "../images/offerBlock3/full.png"
 import subpages from "../images/offerBlock3/subpages.png"
-import domain from "../images/offerBlock3/domain.png"
+import cms from "../images/offerBlock3/cms.png"
 import social from "../images/offerBlock3/social.png"
 
 
@@ -45,6 +45,7 @@ export const offerBlock2 = [
   export const offerBlock3 = [
     { img: full, text: "Cały pakiet w stronie typu landing page" },
     { img: '', text: "+ dodatkowo w tej cenie" },
-    { img: subpages, text: "do 6 podstron" },
+    { img: subpages, text: "Do 6 podstron" },
+    { img: cms, text: " Zarządzaj teścią swojej strony" },
     { img: social, text: "Social media" },
   ]

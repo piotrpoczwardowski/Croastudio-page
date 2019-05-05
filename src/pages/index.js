@@ -25,26 +25,19 @@ import { offerBlock1, offerBlock2, offerBlock3 } from "../components/Arrays"
 const IndexPage = () => (
   <Layout>
     <Helmet
-      title="Strony WWW-Projektowanie stron www"
+      title="Strony WWW - Projektowanie stron www"
       meta={[
-        { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika" },
-        { name: "keywords", content: "...." },
+        { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama" },
+        { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" },
       ]}
     />
 
     <div className="welcome">
       <div className="welcome__text">
-        <div className="type">
-          Strona www dla Ciebie
-          {/* <Typing speed={50} loop>
-       Potrzebujesz <br/> stronę <br/> www? 
-        <Typing.Backspace count={29} delay={1000}/>
-        Brak <br/> pomysłu?
-        <Typing.Backspace count={24} delay={1000}/>
-        Zrobimy to za Ciebie!
-        <Typing.Backspace count={24} delay={1000}/>
-      </Typing> */}
-        </div>
+        <h1 className="type">
+          Strona WWW dla Ciebie
+         
+        </h1>
 
         <div className="welcome__button">
           <button>

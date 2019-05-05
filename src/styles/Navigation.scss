@@ -56,17 +56,30 @@
     border-bottom-right-radius: 0px;
   }
 }
-
+@media (max-width: 1000px) {
+  .navigation__links {
+   
+    a {
+     
+      &:hover {
+        background-size: 900% 100%;
+      }
+    }
+  }
+}
 @media (max-width: 860px) {
   .navigation__logo {
     margin-left: 20px;
+  }
+  .navigation{
+    position: static;
   }
 }
 
 @media (max-width: 600px) {
   .navigation__links {
     transition: all 1s;
-    background: rgba(255, 255, 255, 0.692);
+    background: rgb(255, 255, 255);
     position: absolute;
     width: 100%;
     margin: 0;

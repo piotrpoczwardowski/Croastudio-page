@@ -40,7 +40,7 @@ p {
 }
 
 .welcome__text {
-  width: 500px;
+  width: 600px;
   margin-left: 100px;
   margin-top: 30px;
 }
@@ -60,6 +60,7 @@ p {
 }
 
 .welcome__button button {
+  outline: none;
   color: white;
   background: linear-gradient(270deg, #d400ff, #ad04a5, #4d023c, #000000);
   background-size: 900% 100%;
