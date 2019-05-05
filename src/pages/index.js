@@ -48,7 +48,7 @@ const IndexPage = () => (
 
         <div className="welcome__button">
           <button>
-            <a className='offer__button' href="#offer"> Poznaj ofertę!</a> <a className='contact__button' href="#contact"> Skontaktuj się z nami!</a>
+            <a className='offer__button' href="#offer"> Poznaj ofertę!</a> <a className='contact__button' href="#contact"> Skontaktuj się!</a>
           </button>
         </div>
       </div>

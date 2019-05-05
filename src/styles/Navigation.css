@@ -62,7 +62,7 @@
 @media (max-width: 600px) {
   .navigation__links {
     transition: all 1s;
-    background: white;
+    background: rgba(255, 255, 255, 0.692);
     position: absolute;
     width: 100%;
     margin: 0;
@@ -100,5 +100,22 @@
     margin-left: 40vw;
     cursor: pointer;
     margin-top: 10px;
+  }
+}
+
+@media (max-height: 469px) {
+  .navigation__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navigation__links.show {
+    height: 50vh;
+  }
+  .navigation__links a {
+    width: 120px;
+    height: 50px;
+  }
+  .navigation__links a:not(:last-child) {
+    border-bottom: none;
   }
 }
