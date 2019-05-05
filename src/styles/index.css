@@ -404,6 +404,18 @@ p {
   .graphic {
     background-image: none;
   }
+  .welcome__button button:hover {
+    background-size: 900% 100%;
+    transform: scale(1);
+  }
+  .welcome__arrow:hover {
+    background-position-y: -900px;
+    background-size: 100% 500%;
+  }
+  .gallery__block:hover {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0px #8db7df;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -508,9 +520,6 @@ p {
 }
 
 @media (max-width: 600px) {
-  .gallery__block {
-    pointer-events: none;
-  }
   .gallery__block img {
     height: 30vw;
   }

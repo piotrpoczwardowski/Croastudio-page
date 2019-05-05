@@ -72,14 +72,14 @@
     overflow: hidden;
   }
   .navigation__links.show {
-    height: 400px;
+    height: 85vh;
   }
   .navigation__links a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 100px;
+    height: 85px;
     margin: 0 auto;
     font-size: 30px;
   }
@@ -91,6 +91,12 @@
     margin-left: 50vw;
     cursor: pointer;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navigation__links .offer {
+    display: none;
   }
 }
 

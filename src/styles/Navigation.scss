@@ -76,14 +76,14 @@
     overflow: hidden;
 
     &.show {
-      height: 400px;
+      height: 85vh;
     }
     a {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 300px;
-      height: 100px;
+      height: 85px;
       margin: 0 auto;
       font-size: 30px;
 
@@ -99,6 +99,14 @@
     cursor: pointer;
     margin-top: 10px;
   }
+}
+@media (max-width: 400px) {
+  .navigation__links{
+    .offer{
+      display: none;
+    }
+  }
+  
 }
 
 @media (max-width: 361px) {
