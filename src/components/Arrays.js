@@ -46,6 +46,6 @@ export const offerBlock2 = [
     { img: full, text: "Cały pakiet w stronie typu landing page" },
     { img: '', text: "+ dodatkowo w tej cenie" },
     { img: subpages, text: "Do 6 podstron" },
-    { img: cms, text: " Zarządzaj teścią swojej strony" },
+    { img: cms, text: " Zarządzaj treścią swojej strony" },
     { img: social, text: "Social media" },
   ]

@@ -72,7 +72,7 @@ const IndexPage = () => (
 
         <p>
           Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony, 
-          łatwe w nawigacji, przyjazne dla potencjalnego klienta.
+          łatwe w nawigacji, przyjazne dla klienta.
         </p>
         <h3>W cenie każdego projektu:</h3>
         <p>
@@ -192,7 +192,7 @@ const IndexPage = () => (
             {" "}
             Numer <br />{" "}
           </strong>
-          534-429-916
+          534-429-916 / 
         </p>
         <p>
           <strong>
