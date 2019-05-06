@@ -1,1 +1,1 @@
-.contener{padding-top:80px;position:relative}.contener__video{width:100%;position:absolute;z-index:-1;top:0}@media (max-width: 1300px){.contener__video{display:none}}
+.contener{padding-top:80px;position:relative}.contener__video{width:100%;position:absolute;z-index:-1;top:0}@media (max-width: 1300px){.contener__video{display:none}}@media (max-width: 860px){.contener{padding-top:0px}}

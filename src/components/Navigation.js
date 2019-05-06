@@ -45,7 +45,7 @@ class Navigation extends React.Component {
           <div className="navigation__links">
           <a href='#whyUs' className="portfolio">Start</a>
           <a href='#graphic' className="price">Grafika</a>
-          <a href='#gallery' className="portfolio">Galeria</a>
+         
           <a href='#offer' className="offer">Oferta</a>
          
           
