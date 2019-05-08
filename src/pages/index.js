@@ -28,8 +28,7 @@ const IndexPage = () => (
       title="Strony WWW - Projektowanie stron www"
       meta={[
         { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama" },
-        { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" },
-        {name: 'robots', content='noindex, nofollow, noodp, noydir'}
+        { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" }
 
       ]}
     />
