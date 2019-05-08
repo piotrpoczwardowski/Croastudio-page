@@ -29,9 +29,8 @@ const IndexPage = () => (
       meta={[
         { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama" },
         { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" },
-        {name: 'robots', content='noindex, nofollow'},
-        {name: 'robots', content='noodp'},
-        {name: 'robots', content='noydir'}
+        {name: 'robots', content='noindex, nofollow, noodp, noydir'}
+
       ]}
     />
 
