@@ -171,7 +171,7 @@ const IndexPage = () => (
         <div className="benefits">
           {offerBlock3.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
+            <div className="benefit__img">  <img src={benef.img} alt='' /></div>
               <div className={benef.img === '' ? 'benefit__text--add' : 'benefit__text'}>{benef.text}</div>
             </div>
           ))}
@@ -193,7 +193,7 @@ const IndexPage = () => (
             {" "}
             Numer <br />{" "}
           </strong>
-          534-429-916 / 
+          534-429-916 / 502975565
         </p>
         <p>
           <strong>
