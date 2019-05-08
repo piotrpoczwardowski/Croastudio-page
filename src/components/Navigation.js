@@ -41,7 +41,7 @@ class Navigation extends React.Component {
      
       return (
           <div className="navigation">
-          <img className="navigation__logo" src={Logo} alt=""/>
+          <img className="navigation__logo" src={Logo} alt="croa studio logo"/>
           <div className="navigation__links">
           <a href='#whyUs' className="portfolio">Start</a>
           <a href='#gallery' className="price">Galeria</a>

@@ -16,10 +16,10 @@ class SideMenu extends React.Component {
           <div className='sideMenu'>
               <p><strong>Znajdziesz też nas na</strong></p>
              <div className="sideMenu__links">
-              <a target="_blank" href="https://www.facebook.com/croastudioprojektowaniawww/"><img src={facebook} alt=""/></a>
-              <a target="_blank" href="https://www.instagram.com/croastudio/"><img src={instagram} alt=""/></a>
-              <a target="_blank" href="https://www.behance.net/gallery/79732969/Cooking-e-book-project"><img src={behance} alt=""/></a>
-              <a target="_blank" href="https://github.com/piotrpoczwardowski"><img src={github} alt=""/></a>
+              <a target="_blank" href="https://www.facebook.com/croastudioprojektowaniawww/"><img src={facebook} alt="facebook icon"/></a>
+              <a target="_blank" href="https://www.instagram.com/croastudio/"><img src={instagram} alt="instagram icon"/></a>
+              <a target="_blank" href="https://www.behance.net/gallery/79732969/Cooking-e-book-project"><img src={behance} alt="behance icon"/></a>
+              <a target="_blank" href="https://github.com/piotrpoczwardowski"><img src={github} alt="github icon"/></a>
               </div>
           </div>
       )

@@ -29,6 +29,9 @@ const IndexPage = () => (
       meta={[
         { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama" },
         { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" },
+        {name: 'robots', content='noindex, nofollow'},
+        {name: 'robots', content='noodp'},
+        {name: 'robots', content='noydir'},
       ]}
     />
 
@@ -60,12 +63,12 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="whyUs__image">
-        <img src={Girl} alt="" />
+        <img src={Girl} alt="woman" />
       </div>
     </div>
     <div className="description">
       <div className="description__image">
-        <img src={Man} alt="" />
+        <img src={Man} alt="man" />
       </div>
       <div className="description__text">
         <h2>Strona WWW</h2>
@@ -105,21 +108,21 @@ const IndexPage = () => (
       <div className="gallery__blocks">
         <div className="gallery__block">
           <a target="_blank" href="https://www.firmaprofi.com.pl/">
-            <img src={profi} alt="" />
+            <img src={profi} alt="Strona firma profi" />
             <h3>Projekt strony www firma profi</h3>
           </a>
         </div>
 
         <div className="gallery__block">
           <a target="_blank" href="https://stoic-tesla-57b834.netlify.com/">
-            <img src={start} alt="" />
+            <img src={start} alt="Landing page - łatwy start" />
             <h3>Landing page</h3>
           </a>
         </div>
       </div>
     </div>
     <div id="offer" className="offer__title">
-      <h2>Oferta</h2>
+      <h2>Cennik</h2>
     </div>
     <div className="offer__section">
       <div className="offer__block">
@@ -133,7 +136,7 @@ const IndexPage = () => (
         <div className="benefits">
           {offerBlock1.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
               <div className="benefit__text">{benef.text}</div>
             </div>
           ))}
@@ -150,7 +153,7 @@ const IndexPage = () => (
         <div className="benefits">
           {offerBlock2.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
               <div className="benefit__text">{benef.text}</div>
             </div>
           ))}
@@ -170,7 +173,7 @@ const IndexPage = () => (
         <div className="benefits">
           {offerBlock3.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="" /></div>
+            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
               <div className={benef.img === '' ? 'benefit__text--add' : 'benefit__text'}>{benef.text}</div>
             </div>
           ))}
@@ -204,9 +207,9 @@ const IndexPage = () => (
         <SideMenu />
       </div>
       <div className="leafs">
-        <img src={leaf1} alt="" className="leaf1" />
-        <img src={leaf2} alt="" className="leaf2" />
-        <img src={leaf3} alt="" className="leaf3" />
+        <img src={leaf1} alt="liść" className="leaf1" />
+        <img src={leaf2} alt="liść" className="leaf2" />
+        <img src={leaf3} alt="liść" className="leaf3" />
       </div>
     </div>
   </Layout>
