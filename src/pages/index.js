@@ -63,7 +63,7 @@ const IndexPage = () => (
         </a>
       </div>
     </div>
-    <div id="whyUs" className="whyUs">
+    <div id="start" className="whyUs">
       <div className="whyUs__text">
         <h2>Witaj na naszej stronie!</h2>
         <p>
@@ -110,7 +110,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div id="gallery" className="gallery">
+    <div id="galeria" className="gallery">
       <div className="gallery__title">
         <h2>Galeria</h2>
       </div>
@@ -130,8 +130,8 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div id="offer" className="offer__title">
-      <h2>Cennik</h2>
+    <div id="oferta" className="offer__title">
+      <h2>Oferta</h2>
     </div>
     <div className="offer__section">
       <div className="offer__block">
@@ -197,7 +197,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div id="contact" className="contact__section">
+    <div id="kontakt" className="contact__section">
       <h2>Kontakt</h2>
       <div>
         <p>

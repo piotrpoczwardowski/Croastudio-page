@@ -43,13 +43,13 @@ class Navigation extends React.Component {
           <div className="navigation">
           <img className="navigation__logo" src={Logo} alt="croa studio logo"/>
           <div className="navigation__links">
-          <a href='#whyUs' className="portfolio">Start</a>
-          <a href='#gallery' className="price">Galeria</a>
+          <a href='#start' className="portfolio">Start</a>
+          <a href='#galeria' className="price">Galeria</a>
          
-          <a href='#offer' className="offer">Cennik</a>
+          <a href='#oferta' className="offer">Oferta</a>
          
           
-          <a href='#contact' className="contact">Kontakt</a>
+          <a href='#kontakt' className="contact">Kontakt</a>
           </div>
          <div onClick={this.showMenu} className="hamburgerMenu">
          <FaBars />
