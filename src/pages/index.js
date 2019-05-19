@@ -27,22 +27,33 @@ const IndexPage = () => (
     <Helmet
       title="Strony WWW - Projektowanie stron www"
       meta={[
-        { name: "description", content: "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama" },
-        { name: "keywords", content: "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama" }
-
+        {
+          name: "description",
+          content:
+            "Strony WWW - Projektowanie stron www, responsywne, nowoczesne, grafika i reklama",
+        },
+        {
+          name: "keywords",
+          content:
+            "Strona, strony, grafika, www, responsywność, cms, grafika, banery, reklama",
+        },
       ]}
     />
 
     <div className="welcome">
       <div className="welcome__text">
-        <h1 className="type">
-          Strona WWW dla Ciebie
-         
-        </h1>
+        <h1 className="type">Strona WWW dla Ciebie</h1>
 
         <div className="welcome__button">
           <button>
-            <a className='offer__button' href="#offer"> Poznaj ofertę!</a> <a className='contact__button' href="#contact"> Skontaktuj się!</a>
+            <a className="offer__button" href="#offer">
+              {" "}
+              Poznaj ofertę!
+            </a>{" "}
+            <a className="contact__button" href="#contact">
+              {" "}
+              Skontaktuj się!
+            </a>
           </button>
         </div>
       </div>
@@ -72,7 +83,7 @@ const IndexPage = () => (
         <h2>Strona WWW</h2>
 
         <p>
-          Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony, 
+          Strona jest wizytówką twojej firmy 24/h. Tworzymy nowoczesne strony,
           łatwe w nawigacji, przyjazne dla klienta.
         </p>
         <h3>W cenie każdego projektu:</h3>
@@ -126,36 +137,36 @@ const IndexPage = () => (
       <div className="offer__block">
         <div className="block__title">
           PROSTA STRONA <br />
-         <div className="block__title--thin">(typu landing page)</div> 
+          <div className="block__title--thin">(typu landing page)</div>
         </div>
-        <div style={{ color: "#6F3996" }} className="block__price">
-          od 399,-
-        </div>
+
         <div className="benefits">
           {offerBlock1.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
+              <div className="benefit__img">
+                {" "}
+                <img src={benef.img} alt="icon" />
+              </div>
               <div className="benefit__text">{benef.text}</div>
             </div>
           ))}
-          
         </div>
       </div>
       <div className="offer__block">
         <div style={{ marginTop: "10px" }} className="block__title">
           GRAFIKA
         </div>
-        <div style={{ color: "#8ED2C8" }} className="block__price">
-          od 50,-
-        </div>
+
         <div className="benefits">
           {offerBlock2.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt="icon" /></div>
+              <div className="benefit__img">
+                {" "}
+                <img src={benef.img} alt="icon" />
+              </div>
               <div className="benefit__text">{benef.text}</div>
             </div>
           ))}
-          
         </div>
       </div>
       <div className="offer__block">
@@ -165,17 +176,23 @@ const IndexPage = () => (
           </span>
           <span className="title2">STRONA PREMIUM</span>
         </div>
-        <div style={{ color: "#5055A5" }} className="block__price">
-          od 999 .-
-        </div>
+
         <div className="benefits">
           {offerBlock3.map(benef => (
             <div className="benefit">
-            <div className="benefit__img">  <img src={benef.img} alt='' /></div>
-              <div className={benef.img === '' ? 'benefit__text--add' : 'benefit__text'}>{benef.text}</div>
+              <div className="benefit__img">
+                {" "}
+                <img src={benef.img} alt="" />
+              </div>
+              <div
+                className={
+                  benef.img === "" ? "benefit__text--add" : "benefit__text"
+                }
+              >
+                {benef.text}
+              </div>
             </div>
           ))}
-          
         </div>
       </div>
     </div>
