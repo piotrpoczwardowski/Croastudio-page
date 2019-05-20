@@ -156,7 +156,7 @@ p {
   margin-top: -120px;
   background: white;
   padding-top: 100px;
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
 .whyUs__text {
@@ -432,7 +432,7 @@ p {
   .whyUs {
     margin-top: -120px;
     padding-top: 100px;
-    margin-left: 100px;
+    padding-left: 100px;
   }
   .whyUs__image {
     display: block;
@@ -533,9 +533,8 @@ p {
   .whyUs {
     display: block;
     margin-top: -120px;
-    background: white;
     padding-top: 100px;
-    margin-left: 0px;
+    padding-left: 0px;
     text-align: center;
   }
   .whyUs__text {
