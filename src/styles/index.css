@@ -199,7 +199,7 @@ p {
 .graphic {
   background-image: url(../images/flowers.png);
   background-size: 700px 700px;
-  background-position-x: 55%;
+  background-position-x: 30vw;
   background-repeat: no-repeat;
   height: 700px;
   margin-top: 50px;
